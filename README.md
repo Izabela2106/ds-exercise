@@ -3,7 +3,7 @@
 In order to run project first run:
 ### `npm install`
 
-then(to open in the development mode) run:
+then (to open in the development mode) run:
 
 ### `npm run storybook`
 
