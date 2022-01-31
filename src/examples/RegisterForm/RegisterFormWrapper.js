@@ -6,7 +6,7 @@ export const RegisterBox = styled.div`
   width: 900px;
   display: flex;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.form.formGreyColor};
+  background-color: #e9ecef;
   border-radius: 0.7rem;
   box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5);
   margin: 2%;
@@ -35,25 +35,25 @@ export const ImageBox = styled.div`
   background: url(${mapImage2});
   background-size: cover;
   background-position: 50%;
-  background-color: ${({ theme }) => theme.colors.form.formBlueColor};
+  background-color: #0077b6;
   @media (max-width: 620px) {
     display: none;
   }
 `;
 export const WelcomeMessage = styled.div`
-  color: ${({ theme }) => theme.colors.form.black};
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  font-weight: ${({ theme }) => theme.fontWeight.normal};
-  font-size: ${({ theme }) => theme.fontSize.large};
+  font-weight: normal;
+  font-size: 24px;
   h3 {
     text-align: center;
   }
   @media (max-width: 800px) {
-    font-size: ${({ theme }) => theme.fontSize.medium};
+    font-size: 18px;
   }
 `;
 
@@ -95,12 +95,12 @@ export const Input = styled.input`
   height: 40px;
   margin: 2%;
   border-radius: 0.5rem;
-  background-color: ${({ theme }) => theme.colors.form.formInputColor};
-  border: 1px solid ${({ theme }) => theme.colors.form.formBorderInputColor};
-  color: ${({ theme }) => theme.colors.form.inputTextColor};
+  background-color: #dce0e5;
+  border: 1px solid #adb5bd;
+  color: #495057;
   padding: 0.5rem;
 
   :focus {
-    outline: 0.8px solid ${({ theme }) => theme.colors.form.inputTextColor};
+    outline: 0.8px solid #495057;
   }
 `;

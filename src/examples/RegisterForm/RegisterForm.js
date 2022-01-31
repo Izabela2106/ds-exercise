@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import {
   ImageBox,
   RegisterBox,
@@ -9,7 +8,7 @@ import {
   WelcomeMessage,
   GenderButtonsBox,
 } from "./RegisterFormWrapper";
-import Button from "../Button/Button";
+import Button from "../../components/Button/Button";
 
 const RegisterForm = () => {
   return (

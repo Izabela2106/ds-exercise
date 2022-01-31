@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import ButtonOutlinedWrapper from "./ButtonOutlinedWrapper";
 import ButtonNormalWrapper from "./ButtonNormalWrapper";
+import StylesProvider from "../../providers/StylesProvider";
 
 const Button = ({
   size = "medium",
@@ -20,18 +21,19 @@ const Button = ({
     variant === "normal" ? ButtonNormalWrapper : ButtonOutlinedWrapper;
 
   return (
-    <Wrapper
-      color={color}
-      size={size}
-      disabled={disabled}
-      onClick={(e) => handleClick(e)}
-      focused={focused}
-      disables={disabled}
-      checkable={checkable}
-      className={focused ? "focused" : null}
-    >
-      {label}
-    </Wrapper>
+    <StylesProvider>
+      <Wrapper
+        color={color}
+        size={size}
+        disabled={disabled}
+        onClick={(e) => handleClick(e)}
+        focused={focused}
+        disables={disabled}
+        checkable={checkable}
+      >
+        {label}
+      </Wrapper>
+    </StylesProvider>
   );
 };
 

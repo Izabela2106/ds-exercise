@@ -1,6 +1,7 @@
 import StylesProvider from "./providers/StylesProvider";
 import Button from "./components/Button/Button";
-import RegisterForm from "./components/RegisterForm/RegisterForm";
+import RegisterForm from "./examples/RegisterForm/RegisterForm";
+import Filters from "./examples/Filters/Filters";
 
 function App() {
   return <></>;

@@ -4,13 +4,12 @@ import StylesProvider from "../providers/StylesProvider";
 export default {
   title: "Button",
   component: Button,
+  argTypes: {
+    variant: { table: { disable: true } },
+  },
 };
 
-const Template = (args) => (
-  <StylesProvider>
-    <Button {...args} />
-  </StylesProvider>
-);
+const Template = (args) => <Button {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {
